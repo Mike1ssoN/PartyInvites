@@ -1,0 +1,35 @@
+﻿@model System.Collections.Generic.IEnumerable<PartyInvites.Models.GuestResponse>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewpoint" content="width=device-width"/>
+    <title>RsvpForm</title>
+</head>
+<body>
+<h2> Here is the list of nice  guys</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (PartyInvites.Models.GuestResponse r in  Model)
+    {
+        <tr>
+            <td>@r.Name</td>
+            <td>@r.Email/td>
+            <td>@r.Phone</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</body>
+

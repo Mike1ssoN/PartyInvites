@@ -1,0 +1,25 @@
+﻿@model PartyInvites.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewpoint" content="width=device-width"/>
+    <title>Thanks</title>
+</head>
+<body>
+<div>
+    <h1>Thank you,@Model.Name!</h1>
+    @if (Model.WillAttend == true)
+    {
+        @:Take sme girl and lets fukc!
+    }
+    else
+    {
+        @:you asshole
+    }
+</div>
+Click <a asp-action="ListRespinses"> here</a> to see who will be fuck!
+</body>
